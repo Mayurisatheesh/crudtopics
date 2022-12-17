@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    body{
+        background-color: rgb(251, 14, 93);
+        color:black;
+        height: auto;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <th>webage data</th>
+        <table border="4px">
+            <tr>
+                <td>Topic_Name</td>
+                <td>Name</td>
+                <td>URL</td>
+            </tr>
+            {% for w in LWO %}
+            <tr>
+                <td>{{w.Topic_Name}}</td>
+                <td>{{w.Name}}</td>
+                <td>{{w.URL}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>

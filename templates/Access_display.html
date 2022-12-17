@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(87, 139, 223);
+            color: black;
+            height:auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <th>Access data</th>
+        <table border="4px">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+            {% for A in LAO %}
+                <tr>
+                    <td>{{A.Name}}</td>
+                    <td>{{A.Date}}</td>
+                </tr>
+            {% endfor %}
+
+
+        </table>
+    </center>
+    
+</body>
+</html>
